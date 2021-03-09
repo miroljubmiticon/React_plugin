@@ -17,8 +17,8 @@ Pod::Spec.new do |s|
 
   s.source_files = "**/*.{h,c,m,swift}"
   s.vendored_framework = "AppoxeeSDK.framework", "AppoxeeLocationServices.framework", "AppoxeeInapp.framework"
-  s.resources = "AppoxeeSDKResources.bundle", "AppoxeeInappResources.bundle"
-  # s.preserve_path = "ios/Frameworks/"
+  s.resources = "ios/AppoxeeSDKResources.bundle", "ios/AppoxeeInappResources.bundle"
+  s.preserve_path = "ios"
   # s.public_header_files = "ios/Frameworks/AppoxeeSDK.framework/Headers/"
   s.requires_arc = true
   s.frameworks = "WebKit"
