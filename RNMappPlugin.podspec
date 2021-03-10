@@ -15,10 +15,10 @@ Pod::Spec.new do |s|
   s.platforms    = { :ios => "10.0" }
   s.source       = { :git => "https://github.com/MappCloud/React-native-plugin", :tag => "#{s.version}" }
 
-  s.source_files = "**/*.{h,c,m,swift}"
-  s.vendored_framework = "AppoxeeSDK.framework", "AppoxeeLocationServices.framework", "AppoxeeInapp.framework"
-  s.resources = "ios/AppoxeeSDKResources.bundle", "ios/AppoxeeInappResources.bundle"
-  s.preserve_path = "ios"
+  s.source_files = "ios/**/*.{h,c,m,swift}"
+  s.vendored_framework = "ios/Frameworks/AppoxeeSDK.framework", "ios/Frameworks/AppoxeeLocationServices.framework", "ios/Frameworks/AppoxeeInapp.framework"
+  s.resources = "ios/Frameworks/AppoxeeSDKResources.bundle", "ios/Frameworks/AppoxeeInappResources.bundle"
+  s.preserve_path = "ios/Frameworks/"
   # s.public_header_files = "ios/Frameworks/AppoxeeSDK.framework/Headers/"
   s.requires_arc = true
   s.frameworks = "WebKit"
